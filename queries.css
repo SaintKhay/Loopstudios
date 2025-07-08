@@ -1,4 +1,46 @@
 /*******************************/
+/* BELOW 1440px (Tablets) */
+/*******************************/
+@media (max-width: 90em) {
+  .hero-sub {
+    width: 48%;
+    left: -14%;
+  }
+  .about-content {
+    padding: 5rem;
+    width: 50%;
+  }
+  .s-text-content {
+    top: 70%;
+  }
+  .w {
+    width: 77%;
+  }
+}
+/*******************************/
+/* BELOW 1040 (Tablets) */
+/*******************************/
+
+@media (max-width: 64em) {
+  html {
+    /* 8px/16px=0.5  */
+    font-size: 56.25%;
+  }
+  .hero-sub h1 {
+    font-size: 5.2rem;
+  }
+  .primary-heading {
+    font-size: 3.6rem;
+  }
+  .about-content {
+    width: 60%;
+    top: 25%;
+  }
+  .s-text-content {
+    font-size: 3.4rem;
+  }
+}
+/*******************************/
 /* BELOW 1200px (Tablets) */
 /*******************************/
 @media (max-width: 51em) {
@@ -39,6 +81,7 @@
     top: 40%;
     left: 5%;
     width: 28%;
+    font-size: 5.4rem;
   }
   .btn {
     padding: 1rem 2rem;

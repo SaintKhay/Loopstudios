@@ -22,6 +22,8 @@ const sectionObserve = function (entries, observer) {
     if (!entry.isIntersecting) return;
     else if (entry.isIntersecting)
       entry.target.classList.remove("section-hidden");
+
+    observer.unobserve(entry.target);
   });
 };
 
@@ -30,4 +32,7 @@ const sectionObserver = new IntersectionObserver(sectionObserve, {
   threshold: 0.15,
 });
 
-section.forEach((s) => sectionObserver.observe(s));
+section.forEach((s) => {
+  sectionObserver.observe(s);
+  s.classList.add("section-hidden");
+});
