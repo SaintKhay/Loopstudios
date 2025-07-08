@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Frontend Mentor - Loopstudios landing page solution
 
 This is a solution to the [Loopstudios landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/loopstudios-landing-page-N88J5Onjw). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
@@ -64,3 +65,6 @@ section.forEach((s) => sectionObserver.observe(s));
 
 Fonts from [Google Fonts](https://fonts.google.com/)
 Icons from [Ion-Icon] https://ionic.io/ionicons
+=======
+# Loopstudios
+>>>>>>> caea73b4c63a221eb3113378cffc40f64af0d3d6
