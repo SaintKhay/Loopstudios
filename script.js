@@ -8,6 +8,7 @@ navBar.addEventListener("click", function () {
   nav.classList.toggle("nav-open");
   navBar.classList.add("hidden");
   navClose.style.display = "block";
+  document.querySelector("body").classList.add("overflow");
 });
 navClose.addEventListener("click", function () {
   nav.classList.toggle("nav-open");
