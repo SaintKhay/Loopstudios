@@ -14,6 +14,7 @@ navClose.addEventListener("click", function () {
   nav.classList.toggle("nav-open");
   navBar.classList.remove("hidden");
   navClose.style.display = "none";
+  document.querySelector("body").classList.remove("overflow");
 });
 
 const section = document.querySelectorAll(".section");
