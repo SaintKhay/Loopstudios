@@ -8,13 +8,13 @@ navBar.addEventListener("click", function () {
   nav.classList.toggle("nav-open");
   navBar.classList.add("hidden");
   navClose.style.display = "block";
-  document.querySelector("body").classList.add("overflow");
+  document.body.classList.add("no-scroll");
 });
 navClose.addEventListener("click", function () {
   nav.classList.toggle("nav-open");
   navBar.classList.remove("hidden");
   navClose.style.display = "none";
-  document.querySelector("body").classList.remove("overflow");
+  document.body.classList.remove("no-scroll");
 });
 
 const section = document.querySelectorAll(".section");

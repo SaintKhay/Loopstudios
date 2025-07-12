@@ -135,6 +135,7 @@
     pointer-events: none;
     visibility: none;
     transition: all 1s ease;
+    z-index: 100;
   }
   .nav-open {
     transform: translateX(0);
