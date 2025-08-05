@@ -1,20 +1,49 @@
 "use strict";
 
+const header = document.querySelector("header");
+const hero = document.querySelector(".hero");
 const navBar = document.querySelector(".icon-open");
 const navClose = document.querySelector(".icon-close");
 const nav = document.querySelector(".nav-links");
 
-navBar.addEventListener("click", function () {
-  nav.classList.toggle("nav-open");
-  navBar.classList.add("hidden");
+// Open nav
+navBar.addEventListener("click", () => {
+  nav.classList.add("nav-open");
+  navBar.style.display = "none";
   navClose.style.display = "block";
-  document.body.classList.add("no-scroll");
+  document.body.classList.remove("no-scroll");
 });
-navClose.addEventListener("click", function () {
-  nav.classList.toggle("nav-open");
-  navBar.classList.remove("hidden");
+
+// Close nav
+navClose.addEventListener("click", () => {
+  nav.classList.remove("nav-open");
   navClose.style.display = "none";
   document.body.classList.remove("no-scroll");
+});
+
+// Optional: Close nav if clicking outside of nav
+document.addEventListener("click", function (e) {
+  if (
+    nav.classList.contains("nav-open") &&
+    !nav.contains(e.target) &&
+    !navBar.contains(e.target) &&
+    !navClose.contains(e.target)
+  ) {
+    nav.classList.remove("nav-open");
+    navClose.style.display = "none";
+    navBar.style.display = "block";
+    document.body.classList.remove("no-scroll");
+  }
+});
+
+// Close nav when a nav link is clicked
+document.querySelectorAll(".nav-links a").forEach((link) => {
+  link.addEventListener("click", () => {
+    nav.classList.remove("nav-open");
+    navBar.style.display = "block";
+    navClose.style.display = "none";
+    document.body.classList.remove("no-scroll");
+  });
 });
 
 const section = document.querySelectorAll(".section");
@@ -43,7 +72,6 @@ document.querySelectorAll(".nav--link").forEach((el) => {
   el.addEventListener("click", function (e) {
     e.preventDefault();
     const id = this.getAttribute("href");
-    console.log(id);
     document.querySelector(id).scrollIntoView({ behavior: "smooth" });
   });
 });

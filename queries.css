@@ -126,8 +126,8 @@
     align-items: start;
     justify-content: center;
     padding-left: 4.4rem;
-    top: 0%;
-    left: 55%;
+    top: 25%;
+    left: 53%;
     transform: translateY(-10%);
     background-color: #181717;
     width: 40%;
@@ -253,7 +253,7 @@
 
 @media (max-width: 768px) {
   .contact-cta {
-    padding: 0rem 1rem;
+    padding: 0rem 1rem 3rem 1rem;
   }
 
   .contact-cta h2 {
