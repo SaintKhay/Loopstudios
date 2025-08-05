@@ -19,10 +19,15 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+
+    <link rel="apple-touch-icon" href="images/favicon-32x32 - Apple.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Alata&display=swap"
       rel="stylesheet"
@@ -41,19 +46,16 @@
         <nav class="nav">
           <ul class="nav-links">
             <li class="nav--item">
-              <a href="#" class="nav--link"> About </a>
+              <a href="#section-1" class="nav--link"> About </a>
             </li>
             <li class="nav--item">
-              <a href="#" class="nav--link"> Careers </a>
+              <a href="#section-2" class="nav--link"> Products </a>
             </li>
             <li class="nav--item">
-              <a href="#" class="nav--link"> Events </a>
+              <a href="#section-3" class="nav--link"> Contact Us </a>
             </li>
             <li class="nav--item">
-              <a href="#" class="nav--link"> Product </a>
-            </li>
-            <li class="nav--item">
-              <a href="#" class="nav--link"> Support </a>
+              <a href="#section-4" class="nav--link"> Careers </a>
             </li>
           </ul>
 
@@ -76,7 +78,10 @@
           <h1>Immersive experiences that deliver</h1>
         </div>
       </section>
-      <section class="about--section container section section-hidden">
+      <section
+        class="about--section container section section-hidden"
+        id="section-1"
+      >
         <div class="about">
           <img
             src="images/desktop/image-interactive.jpg"
@@ -95,7 +100,10 @@
         </div>
       </section>
 
-      <section class="services--section container section section-hidden">
+      <section
+        class="services--section container section section-hidden"
+        id="section-2"
+      >
         <div class="services-head">
           <h2 class="primary-heading p-bottom">Our creations</h2>
           <button class="btn">see all</button>
@@ -243,7 +251,47 @@
           </div>
         </div>
       </section>
-      <footer class="footer--section section section-hidden">
+
+      <section class="contact-cta container" id="section-3">
+        <div class="cta-header">
+          <button class="contact-badge">
+            <i class="fas fa-envelope"></i> Contact us
+          </button>
+          <h2>Get in touch with us.<br />We’re here to assist you.</h2>
+          <p>Your feedback is important to us</p>
+        </div>
+
+        <form class="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="full-name">Full Name</label>
+              <input type="text" id="full-name" placeholder="Melissa Daniel" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" placeholder="yourname@gmail.com" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="+123456789" />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              rows="4"
+              placeholder="Type your message here !!!"
+            ></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Leave us a Message</button>
+        </form>
+      </section>
+
+      <footer class="footer--section section section-hidden" id="section-4">
         <div class="footer-content container">
           <img src="images/logo.svg" class="logo-icon" alt="Loop studio logo" />
           <div>
@@ -280,19 +328,16 @@
         <div class="footer-content container">
           <ul class="footer-links">
             <li class="nav--item">
-              <a href="#" class="nav--link"> About </a>
+              <a href="#section-1" class="nav--link"> About </a>
             </li>
             <li class="nav--item">
-              <a href="#" class="nav--link"> Careers </a>
+              <a href="#section-2" class="nav--link"> Products </a>
             </li>
             <li class="nav--item">
-              <a href="#" class="nav--link"> Events </a>
+              <a href="#section-3" class="nav--link"> Contact Us </a>
             </li>
             <li class="nav--item">
-              <a href="#" class="nav--link"> Product </a>
-            </li>
-            <li class="nav--item">
-              <a href="#" class="nav--link"> Support </a>
+              <a href="#section-4" class="nav--link"> Careers </a>
             </li>
           </ul>
           <p class="copyright-text">

@@ -19,7 +19,6 @@ navClose.addEventListener("click", function () {
 
 const section = document.querySelectorAll(".section");
 const sectionObserve = function (entries, observer) {
-  console.log(entries);
   entries.forEach((entry) => {
     if (!entry.isIntersecting) return;
     else if (entry.isIntersecting)
@@ -37,4 +36,14 @@ const sectionObserver = new IntersectionObserver(sectionObserve, {
 section.forEach((s) => {
   sectionObserver.observe(s);
   s.classList.add("section-hidden");
+});
+
+// Page Navigation
+document.querySelectorAll(".nav--link").forEach((el) => {
+  el.addEventListener("click", function (e) {
+    e.preventDefault();
+    const id = this.getAttribute("href");
+    console.log(id);
+    document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+  });
 });

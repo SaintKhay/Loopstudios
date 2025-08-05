@@ -24,7 +24,6 @@ body {
   font-family: "Alata", sans-serif;
   line-height: 1;
   font-weight: 100;
-  overflow-x: hidden;
   max-width: 100vw;
   background-color: #fff;
 }
@@ -53,7 +52,6 @@ body {
   background-size: cover;
   color: #fff;
   height: 100vh;
-  /* margin-bottom: 9.6rem; */
 }
 
 .header {
@@ -86,8 +84,9 @@ a,
 }
 .nav--item {
   border-bottom: 1px solid transparent;
-  /* padding-bottom: 10px; */
+  transition: all 0.4s ease;
   text-decoration: none;
+  padding-bottom: 5px;
   transition: all 0.4s ease;
 }
 .nav--item:hover,
@@ -95,7 +94,7 @@ a,
   color: #fff;
   text-decoration: none;
   border-bottom: currentColor 1px solid;
-  /* padding-bottom: 10px; */
+  padding-bottom: 5px;
   display: inline-block;
 }
 
@@ -246,8 +245,102 @@ SERVICES*/
   opacity: 0.5;
 }
 
-/* ////////////////////////////////////
-SERVICES*/
+/* //////CTA/////// */
+
+.contact-cta {
+  padding: 4rem 1.5rem;
+  background: #fff;
+  text-align: center;
+}
+
+.contact-badge {
+  background: none;
+  border: 1px solid #181717;
+  color: #181717;
+  font-weight: bold;
+  border-radius: 25px;
+  padding: 0.4rem 1rem;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.contact-badge i {
+  margin-right: 0.5rem;
+}
+
+.contact-cta h2 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  color: #181717;
+}
+
+.contact-cta p {
+  color: #555;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+.contact-form {
+  background: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 2rem;
+  max-width: 800px;
+  overflow: hidden;
+  margin: 0 auto;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.form-row {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-size: 1.4rem;
+}
+
+.form-group input,
+.form-group textarea {
+  border: none;
+  border-bottom: 1px solid #aaa;
+  padding: 0.7rem 0;
+  font-size: 1.2rem;
+  background: none;
+  outline: none;
+  color: #111;
+}
+
+.submit-btn {
+  display: block;
+  background: #181717;
+  color: white;
+  padding: 0.9rem 2rem;
+  border: none;
+  border-radius: 6px;
+  margin: 0 auto;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #363434;
+}
+
+/* ///FOOTER////// */
 
 .footer--section {
   background-color: #181717;
